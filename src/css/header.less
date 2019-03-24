@@ -1,0 +1,167 @@
+.header{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:60px;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+    z-index: 999;
+}
+.logo{
+    position: absolute;
+    width:100px;
+    height:100%;
+}
+.logo > img{
+    width:100%;
+    height: 95%;
+}
+.nav{
+    width:70%;
+    height:100%;
+    margin: 0 auto;
+    color: #333;
+}
+.nav > div{
+    height:100%;
+    line-height: 29px;
+    margin-right: 10px;
+    font-size: 17px;
+    padding: 15px 30px 15px 15px;
+}
+.active{
+    color:#ea6f5a;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    color: #969696;
+    cursor: pointer;
+}
+.nav > .searchWrap{
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+.search{
+    width:160px;
+    height:38px;
+    border: none;
+    outline: none;
+    border-radius: 19px;
+    padding: 0 20px;
+    font-size: 14px;
+    background-color: #eee;
+    padding-right:35px; 
+    color: #666;
+    transition: width 0.5s ease;
+}
+.focused{
+    width:240px;
+}
+.searchWrap > i{
+    position: absolute;
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    text-align: center;
+    line-height: 25px;
+    right:20px;
+    top:17px;
+    cursor:pointer;
+}
+.iconBg{
+    background-color: #aaa;
+}
+.search::placeholder{
+    color:#999;
+}
+.addition{
+    position: absolute;
+    right:0;
+    top: 0;
+    height:100%;
+}
+.addition > button{
+    float: right;
+    margin-top: 9px;
+    border-radius: 19px;
+    line-height:38px;
+    border: 1px solid #ec6149;
+    margin-right: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    color:#fff;
+    background-color: #ec6149;
+    font-size: 14px;
+}
+.addition > button:last-child{
+    background-color: #fff;
+    color: #ec6149;
+}
+.hot{
+    position: absolute;
+    left:10px;
+    top: 60px;
+    width:240px;
+    padding: 0 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    color: #969696;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+    background-color: #fff;
+}
+.hot > .title{
+    display: inline-block;
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.hot > .switch{
+    float: right;
+    margin-top: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.hot > .switch:hover{
+    color: #333;
+}
+.hot > .box{
+    margin-top: 15px;
+}
+.hot .boxItem{
+    float:left;
+    display: block;
+    padding: 0 5px;
+    line-height: 20px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #787878;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hot .boxItem:hover{
+    color:#333;
+}
+.show{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
+}
+.change{
+    float:right;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.changeRotate{
+    font-weight: 600;
+    color: #000;
+    transition: transform .7s ease;
+    transform: rotate(360deg);
+}
