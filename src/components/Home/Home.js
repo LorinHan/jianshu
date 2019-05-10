@@ -42,7 +42,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         getList(page = 1) {
-            axios.get('https://www.easy-mock.com/mock/5c8e0a6d664c69140f7d07be/list/topicList?page=' + page)
+            axios.get('/topicList?page=' + page)
             .then((res) => {
                 var action = {
                     type: 'topicList',
@@ -53,7 +53,7 @@ const mapDispatchToProps = (dispatch) => {
             })
         },
         loadMore(page) {
-            axios.get('https://www.easy-mock.com/mock/5c8e0a6d664c69140f7d07be/list/topicList?page=' + (page + 1))
+            axios.get('/topicList?page=' + (page + 1))
             .then((res) => {
                 var action = {
                     type: 'loadMore',

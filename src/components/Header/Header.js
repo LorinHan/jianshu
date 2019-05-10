@@ -41,7 +41,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(action);
         },
         getList() {
-            axios.get(' https://www.easy-mock.com/mock/5c8e0a6d664c69140f7d07be/list/list', {
+            axios.get('https://www.easy-mock.com/mock/5c8e0a6d664c69140f7d07be/list/list', {
                 headers: {
                     'Authorization': 'Bearer '
                 }

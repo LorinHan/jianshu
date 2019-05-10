@@ -6,6 +6,8 @@ import { HashRouter, Route, Link } from 'react-router-dom';
 import store from '../store'
 import { Provider } from 'react-redux';
 import Loadable from 'react-loadable';
+import axios from 'axios';
+axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5c8e0a6d664c69140f7d07be/list';
 
 const MyLoadingComponent = ({ isLoading, error }) => {
     if (isLoading) {

@@ -15,7 +15,7 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: path.join(__dirname, '/dist'),
-		chunkFilename: 'chunks/[name].js'
+		chunkFilename: 'chunks/[name].chunk.js'
 	},
 	plugins: [
 		htmlPlugin,
